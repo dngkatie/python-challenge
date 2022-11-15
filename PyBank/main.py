@@ -9,7 +9,7 @@ budget_data= os.path.join("..","/Users/katienguyen/Assignment 3/Resources/PyBank
 with open(budget_data) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     csv_header = next(csvreader)
-    print(f"Header: {csv_header}")
+   
     
     # net amount of profit and loss
     Profit = []
@@ -41,9 +41,9 @@ with open(budget_data) as csvfile:
 
 
     # Results
-    print ("Financial Analysis")
+    print ("Financial Analysis :")
 
-    print("...........................................")
+    print("--------------------")
 
     print ("Total Months:" + str(total_months))
 
@@ -61,7 +61,7 @@ with open(budget_data) as csvfile:
 
     file.write("Financial Analysis" + "\n")
 
-    file.write("...................................................." + "\n")
+    file.write("----------------------" + "\n")
 
     file.write("total months: " + str(total_months) + "\n")
 
